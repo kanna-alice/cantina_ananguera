@@ -3,36 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anhanguera</title>
+    <title>Cantina</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Cantina Anhanguera</h1>
-        <input> lll</input>
+        <h1>Cantina</h1>
+        <input placeholder="pesquisar..."></input>
     </header>
     
     <main>
      <div>
-        <button class = s>sei la</button>
-        <button class = s>sei la</button>
-        <button class = s>sei la</button>
-        <button class = s>sei la</button>
+        <button class = c onclick="addToCart({name: 'Prato com carne', price: 15.99})">prato com carne</button>
+        <button class = m onclick="addToCart({name: 'Prato com macarrao', price: 12.99})">prato com macarrao</button>
+        <button class = f onclick="addToCart({name: 'Prato com frango', price: 14.99})">prato com frango</button>
+        <button class = s onclick="addToCart({name: 'Sobremesa', price: 8.99})">sobremesa</button>
      </div>
         <aside class="ss">
 <h2>pedidos</h2>
 <ul id = "carrinho"></ul>
 <p id="total"> Total : 0</p>
-<button> compra 
+<button onclick="completePurchase()"> compra 
 </button>
         </aside>
-
     </main>
-
     <footer>
-        <p>&copy; 2026 Cantina Anhanguera</p>
+        <p>&copy; 2026 Cantina</p>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>
-
-
